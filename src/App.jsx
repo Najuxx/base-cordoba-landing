@@ -11,7 +11,7 @@ import ContactSection from './sections/ContactSection';
 
 export default function App() {
   return (
-    <div className="min-h-screen bg-[#090A0C] text-[#F2F4F7] flex flex-col font-['Inter'] selection:bg-[#00E599] selection:text-[#090A0C]">
+    <div className="min-h-screen bg-[#000000] text-[#F4F4F2] flex flex-col font-['Inter'] selection:bg-[#00E599] selection:text-[#000000]">
       {/* Header Institucional Fijo */}
       <Header />
 

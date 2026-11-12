@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 @theme {
-  --color-obsidian: #090A0C;
+  --color-obsidian: #000000;
   --color-charcoal-dark: #0D0F12;
   --color-charcoal: #111317;
   --color-charcoal-light: #16191F;
@@ -9,32 +9,42 @@
   --color-charcoal-border-subtle: #171A20;
 
   --color-brand-green-deep: #0A241B;
-  --color-brand-green: #0F382A;
+  --color-brand-green: #0F7B4A;
+  --color-brand-green-hover: #0D6A40;
   --color-brand-green-light: #144A38;
   --color-brand-green-border: #1C5944;
 
   --color-emerald-accent: #00E599;
   --color-emerald-hover: #10F4A8;
-  --color-emerald-glow: rgba(0, 229, 153, 0.15);
+  --color-emerald-text: #34C77B;
+  --color-emerald-glow: rgba(15, 123, 74, 0.25);
 
-  --font-display: "Archivo", system-ui, -apple-system, sans-serif;
+  --font-display: "Archivo Black", "Archivo", system-ui, -apple-system, sans-serif;
+  --font-heading: "Archivo Black", "Archivo", system-ui, -apple-system, sans-serif;
   --font-sans: "Inter", system-ui, -apple-system, sans-serif;
   --font-mono: "JetBrains Mono", monospace;
 }
 
 html {
   scroll-behavior: smooth;
-  background-color: #090A0C;
-  color: #F2F4F7;
+  background-color: #000000;
+  color: #F4F4F2;
   font-family: var(--font-sans);
 }
 
 body {
   margin: 0;
   padding: 0;
-  background-color: #090A0C;
+  background-color: #000000;
   min-height: 100vh;
   overflow-x: hidden;
+  font-family: var(--font-sans);
+}
+
+h1, h2, h3 {
+  font-family: var(--font-heading);
+  letter-spacing: -0.01em;
+  line-height: 1.08;
 }
 
 /* Custom scrollbar */
@@ -42,7 +52,7 @@ body {
   width: 8px;
 }
 ::-webkit-scrollbar-track {
-  background: #090A0C;
+  background: #000000;
 }
 ::-webkit-scrollbar-thumb {
   background: #1F242C;
@@ -55,6 +65,5 @@ body {
 /* Selection */
 ::selection {
   background-color: #00E599;
-  color: #090A0C;
+  color: #000000;
 }
-
